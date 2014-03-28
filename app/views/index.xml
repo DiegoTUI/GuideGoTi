@@ -1,0 +1,10 @@
+<Alloy>
+	<Collection src="activity"/>
+	<NavigationWindow id="navigationWindow" platform="ios,mobileweb">
+		<Window id="tableWindow" class="container">
+			<TableView id="table" dataCollection="activity">
+				<Require src="activityRow"/>
+			</TableView>
+		</Window>
+	</NavigationWindow>
+</Alloy>
