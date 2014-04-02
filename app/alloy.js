@@ -9,6 +9,11 @@
 // object. For example:
 //
 // Alloy.Globals.someGlobalFunction = function(){};
+
+// user and password for ATLAS
+Alloy.Globals.atlasUser = "ISLAS";
+Alloy.Globals.atlasPassword = "ISLAS";
+
 if( Ti.App.deployType !== 'production' )
 {
 	var behave = require('behave');
@@ -22,6 +27,3 @@ if( Ti.App.deployType !== 'production' )
 	//run:tests
 	behave.run();	
 }
-// user and password for ATLAS
-Alloy.Globals.atlasUser = "ISLAS";
-Alloy.Globals.atlasPassword = "ISLAS";

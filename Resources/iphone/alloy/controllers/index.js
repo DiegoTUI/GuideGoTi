@@ -1,22 +1,4 @@
 function Controller() {
-    function __alloyId7(e) {
-        if (e && e.fromAdapter) return;
-        __alloyId7.opts || {};
-        var models = __alloyId6.models;
-        var len = models.length;
-        var rows = [];
-        for (var i = 0; len > i; i++) {
-            var __alloyId3 = models[i];
-            __alloyId3.__transform = {};
-            var __alloyId5 = Alloy.createController("activityRow", {
-                $model: __alloyId3
-            });
-            rows.push(__alloyId5.getViewEx({
-                recurse: true
-            }));
-        }
-        $.__views.table.setData(rows);
-    }
     require("alloy/controllers/BaseController").apply(this, Array.prototype.slice.call(arguments));
     this.__controllerPath = "index";
     arguments[0] ? arguments[0]["__parentSymbol"] : null;
@@ -31,23 +13,25 @@ function Controller() {
         barColor: "transparent",
         id: "tableWindow"
     });
-    $.__views.table = Ti.UI.createTableView({
-        id: "table"
+    $.__views.activityTable = Ti.UI.createTableView({
+        id: "activityTable"
     });
-    $.__views.tableWindow.add($.__views.table);
-    var __alloyId6 = Alloy.Collections["activity"] || activity;
-    __alloyId6.on("fetch destroy change add remove reset", __alloyId7);
+    $.__views.tableWindow.add($.__views.activityTable);
     $.__views.navigationWindow = Ti.UI.iOS.createNavigationWindow({
         window: $.__views.tableWindow,
         id: "navigationWindow"
     });
     $.__views.navigationWindow && $.addTopLevelView($.__views.navigationWindow);
-    exports.destroy = function() {
-        __alloyId6.off("fetch destroy change add remove reset", __alloyId7);
-    };
+    exports.destroy = function() {};
     _.extend($, $.__views);
     var root = $.navigationWindow;
     root.open();
+    var rows = [];
+    rows.push(Alloy.createController("activityRow", {
+        name: "Activity 1",
+        price: 32.3
+    }).getView());
+    $.activityTable.setData(rows);
     _.extend($, exports);
 }
 

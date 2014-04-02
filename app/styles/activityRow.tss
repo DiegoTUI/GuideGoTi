@@ -1,23 +1,30 @@
 "Label": {
-	color: "#000",
-	font: {
-		fontSize: "20dp"
-	}
+	color: "#000"
 },
-".vgroup": {
-	layout: "vertical",
-	height: Ti.UI.SIZE
+"#activityRow": {
+	height: "60dp"
 },
-"#row": {
-	className: "loc_row",
-	dataId : ""
+"#image": {
+	top: "2dp",
+	height: "50dp",
+	width: "50dp",
+	left: "5dp",
+	top: "5dp"
+	
 },
 "#name": {
 	top: "2dp",
-	height: Ti.UI.SIZE,
-	left: "5dp",
-	right: "5dp",
+	height: "14dp",
+	left: "60dp",
 	font: {
-		fontSize: "24dp"
+		fontSize: "14dp"
+	}
+},
+"#price": {
+	bottom: "2dp",
+	height: "18dp",
+	right: "2dp",
+	font: {
+		fontSize: "18dp"
 	}
 }

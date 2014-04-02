@@ -1,5 +1,9 @@
 var Alloy = require("alloy"), _ = Alloy._, Backbone = Alloy.Backbone;
 
+Alloy.Globals.atlasUser = "ISLAS";
+
+Alloy.Globals.atlasPassword = "ISLAS";
+
 if ("production" !== Ti.App.deployType) {
     var behave = require("behave");
     require("specs/index");
@@ -8,9 +12,5 @@ if ("production" !== Ti.App.deployType) {
     require("specs/network");
     behave.run();
 }
-
-Alloy.Globals.atlasUser = "ISLAS";
-
-Alloy.Globals.atlasPassword = "ISLAS";
 
 Alloy.createController("index");
