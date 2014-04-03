@@ -1,8 +1,6 @@
-require('behave').andSetup(this);
-
 
 var errors = require("errors");
-var network = require('network');
+var network = require("network");
 
 describe('Item list', function() {
     

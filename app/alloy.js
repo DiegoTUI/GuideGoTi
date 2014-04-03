@@ -10,20 +10,11 @@
 //
 // Alloy.Globals.someGlobalFunction = function(){};
 
+// should we test?
+Alloy.Globals.shouldTest = true;
+
 // user and password for ATLAS
 Alloy.Globals.atlasUser = "ISLAS";
 Alloy.Globals.atlasPassword = "ISLAS";
 
-if( Ti.App.deployType !== 'production' )
-{
-	var behave = require('behave');
 
-	//require your created specs
-	require('specs/index');
-	require('specs/util');
-	require('specs/activity');
-	require('specs/network');
-
-	//run:tests
-	behave.run();	
-}

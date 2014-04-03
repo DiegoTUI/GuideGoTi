@@ -1,5 +1,3 @@
-require('behave').andSetup(this);
-
 var util = require('util');
 
 describe('Random id', function() {
@@ -10,7 +8,7 @@ describe('Random id', function() {
 		for (var i=0; i<10; i++){
 			var newId = util.randomId();
 			expect(newId.length).toBe(8);
-			expect(newId).notToBe(lastId);
+			expect(newId).toNotBe(lastId);
 			lastId = newId;
 		}
 	});

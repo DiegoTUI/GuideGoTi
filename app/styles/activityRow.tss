@@ -4,15 +4,14 @@
 "#activityRow": {
 	height: "60dp"
 },
-"#image": {
-	top: "2dp",
+"#photoImageView": {
 	height: "50dp",
 	width: "50dp",
 	left: "5dp",
 	top: "5dp"
 	
 },
-"#name": {
+"#nameLabel": {
 	top: "2dp",
 	height: "14dp",
 	left: "60dp",
@@ -20,7 +19,7 @@
 		fontSize: "14dp"
 	}
 },
-"#price": {
+"#priceLabel": {
 	bottom: "2dp",
 	height: "18dp",
 	right: "2dp",

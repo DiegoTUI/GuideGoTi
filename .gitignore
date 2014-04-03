@@ -1,4 +1,6 @@
 # Build folder and log file
 build/
+Resources/
 .DS_Store
+.settings
 build.log
