@@ -21,9 +21,28 @@ Alloy.Globals.start = function () {
                 rows.push(Alloy.createController("activityRow", activity).getView());
             });
             $.activityTable.setData(rows);
+            // store the result in globals
+            Alloy.Globals.activityList = result.data;
         }
     });
 };
+// add click event listener to table
+$.activityTable.addEventListener("click", function(event) {
+     Ti.API.info("row clicked: " + JSON.stringify(event.row.code));
+     // Look for the activity code in the current list
+     var activity = Alloy.Globals.activityList.filter(function(activity) {return activity.code === event.row.code;});
+     activity = activity.length == 1 ? activity[0] : null;
+     if (!activity) {
+         return alert("No activity details found for " + event.row.code);
+     }
+     // only for iOS
+     if (OS_IOS) {
+         $.navigationWindow.openWindow(Alloy.createController("activityDetail", activity).getView());
+     } 
+     else if (OS_ANDROID) {
+         Alloy.createController("activityDetail", activity).getView().open();
+     }
+});
 
 if (!Alloy.Globals.shouldTest) {
     Alloy.Globals.start();
@@ -31,11 +50,3 @@ if (!Alloy.Globals.shouldTest) {
 
 // launch jasmine tests
 Ti.include("/tests/tests.js");
-
-/*var rows = [];
-rows.push(Alloy.createController("activityRow", {
-    name: "Activity 1",
-    price: 32.3
-}).getView());
-
-$.activityTable.setData(rows);*/

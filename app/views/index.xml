@@ -1,12 +1,10 @@
 <Alloy>
 	<NavigationWindow id="navigationWindow" platform="ios,mobileweb">
 		<Window id="tableWindow" class="container">
-			<TableView id="activityTable">
-			</TableView>
+			<TableView id="activityTable"/>
 		</Window>
 	</NavigationWindow>
 	<Window id="tableWindow" class="container" platform="android">
-		<TableView id="activityTable">
-		</TableView>
+		<TableView id="activityTable"/>
 	</Window>
 </Alloy>

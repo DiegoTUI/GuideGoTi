@@ -1333,7 +1333,7 @@ jasmine.Matchers.prototype.wasNotCalledWith = function() {
     return [
       "Expected spy not to have been called with " + jasmine.pp(expectedArgs) + " but it was",
       "Expected spy to have been called with " + jasmine.pp(expectedArgs) + " but it was"
-    ]
+    ];
   };
 
   return !this.env.contains_(this.actual.argsForCall, expectedArgs);

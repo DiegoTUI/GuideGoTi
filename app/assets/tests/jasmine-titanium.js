@@ -62,7 +62,7 @@
 
 			var msg = ' (' + pass;
 			if (fail) {
-				msg += ', ' + fail
+				msg += ', ' + fail;
 			}
 			msg += ')';
 

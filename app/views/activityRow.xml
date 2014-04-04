@@ -1,7 +1,11 @@
 <Alloy>
 	<TableViewRow id="activityRow" className="activityRow">
-		<ImageView id="photoImageView"/>
-		<Label id="nameLabel"/>
-		<Label id="priceLabel"/>
+		<View id="mainRowView">
+			<ImageView id="photoImageView"/>
+			<View id="textRowView">
+				<Label id="nameLabel"/>
+				<Label id="priceLabel"/>
+			</View>
+		</View>
 	</TableViewRow>
 </Alloy>

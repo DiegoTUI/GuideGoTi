@@ -1,0 +1,29 @@
+"Label": {
+	color: "#000"
+},
+"#modalityRow": {
+	height: Ti.UI.SIZE,
+	selectionStyle:"none"
+},
+"#modalityNameLabel": {
+	top: "2dp",
+	height: "14dp",
+	left: "10dp",
+	font: {
+		fontSize: "14dp"
+	}
+},
+"#modalityPriceLabel": {
+	bottom: "2dp",
+	height: "18dp",
+	left: "10dp",
+	font: {
+		fontSize: "18dp"
+	}
+},
+"#bookButton": {
+	title: "Book",
+	width: "50dp",
+	height: "18dp",
+	right: "10dp"
+}

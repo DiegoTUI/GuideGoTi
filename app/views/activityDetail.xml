@@ -1,0 +1,9 @@
+<Alloy>
+	<Window id="scrollViewWindow" class="container">
+		<ScrollView id="scrollView">
+			<ImageView id="photoImageView"/>
+			<Label id="titleLabel"/>
+			<TableView id="modalityTable"/>
+		</ScrollView>
+	</Window>
+</Alloy>

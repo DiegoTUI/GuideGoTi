@@ -5,4 +5,7 @@
 		backgroundColor:'transparent',
 		title: 'Activities',
 		barColor: 'transparent'
+},
+"#activityTable": {
+	height: Ti.UI.SIZE
 }

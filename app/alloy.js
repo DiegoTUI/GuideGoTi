@@ -11,10 +11,12 @@
 // Alloy.Globals.someGlobalFunction = function(){};
 
 // should we test?
-Alloy.Globals.shouldTest = true;
+Alloy.Globals.shouldTest = false;
 
 // user and password for ATLAS
 Alloy.Globals.atlasUser = "ISLAS";
 Alloy.Globals.atlasPassword = "ISLAS";
 
-
+// Screen width and height
+Alloy.Globals.screenWidth = Ti.Platform.displayCaps.platformWidth;
+Alloy.Globals.screenHeight = Ti.Platform.displayCaps.platformHeight;

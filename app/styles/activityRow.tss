@@ -2,28 +2,37 @@
 	color: "#000"
 },
 "#activityRow": {
-	height: "60dp"
+	height: Ti.UI.SIZE
+},
+"#mainRowView": {
+	layout: "horizontal",
+	horizontalWrap: false,
+	height: Ti.UI.SIZE
 },
 "#photoImageView": {
-	height: "50dp",
-	width: "50dp",
-	left: "5dp",
-	top: "5dp"
+	height: 50,
+	width: 66,
+	left: 2,
+	top: 5
 	
 },
+"#textRowView": {
+	height: Ti.UI.FILL,
+	left: 10
+},
 "#nameLabel": {
-	top: "2dp",
-	height: "14dp",
-	left: "60dp",
+	top: 2,
+	height: Ti.UI.SIZE,
+	left: 10,
 	font: {
-		fontSize: "14dp"
+		fontSize: 14
 	}
 },
 "#priceLabel": {
-	bottom: "2dp",
-	height: "18dp",
-	right: "2dp",
+	top: 20,
+	height: Ti.UI.SIZE,
+	right: 10,
 	font: {
-		fontSize: "18dp"
+		fontSize: 18
 	}
 }

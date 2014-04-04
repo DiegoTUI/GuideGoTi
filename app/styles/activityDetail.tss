@@ -1,0 +1,23 @@
+".container" : {
+  backgroundColor:"white"
+},
+"#scrollView": {
+	layout: "vertical"
+},
+"#photoImageView": {
+	top: "10dp",
+	width: "267dp",
+	height: "200dp"
+},
+"#titleLabel": {
+	top: "2dp",
+	height: "14dp",
+	left: "10dp",
+	font: {
+		fontSize: "14dp"
+	}
+},
+"#modalityTable": {
+	top: "10dp",
+	height: Ti.UI.SIZE
+}

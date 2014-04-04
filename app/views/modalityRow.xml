@@ -1,0 +1,7 @@
+<Alloy>
+	<TableViewRow id="modalityRow" className="modalityRow">
+		<Label id="modalityNameLabel"/>
+		<Label id="modalityPriceLabel">
+		<Button id="bookButton">
+	</TableViewRow>
+</Alloy>
