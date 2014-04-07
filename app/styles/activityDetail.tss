@@ -5,19 +5,19 @@
 	layout: "vertical"
 },
 "#photoImageView": {
-	top: "10dp",
-	width: "267dp",
-	height: "200dp"
+	top: 10,
+	width: 267,
+	height: 200
 },
 "#titleLabel": {
-	top: "2dp",
-	height: "14dp",
-	left: "10dp",
+	top: 2,
+	height: Ti.UI.SIZE,
+	left: 10,
 	font: {
-		fontSize: "14dp"
+		fontSize: 14
 	}
 },
 "#modalityTable": {
-	top: "10dp",
+	top: 10,
 	height: Ti.UI.SIZE
 }

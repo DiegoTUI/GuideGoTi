@@ -1,5 +1,5 @@
 <Alloy>
-	<Window id="scrollViewWindow" class="container">
+	<Window id="scrollViewWindow" class="container" onOpen="windowOpened">
 		<ScrollView id="scrollView">
 			<ImageView id="photoImageView"/>
 			<Label id="titleLabel"/>

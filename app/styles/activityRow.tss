@@ -17,7 +17,9 @@
 	
 },
 "#textRowView": {
+	layout:"absolute",
 	height: Ti.UI.FILL,
+	width: Ti.UI.FILL,
 	left: 10
 },
 "#nameLabel": {
@@ -29,9 +31,10 @@
 	}
 },
 "#priceLabel": {
-	top: 20,
-	height: Ti.UI.SIZE,
+	bottom: 2,
 	right: 10,
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
 	font: {
 		fontSize: 18
 	}

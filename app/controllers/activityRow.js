@@ -1,7 +1,6 @@
 var args = arguments[0] || {};
 // layout
-$.textRowView.width = Alloy.Globals.screenWidth - $.textRowView.left - $.photoImageView.width - $.photoImageView.left;
-Ti.API.info("screen width: " + Alloy.Globals.screenWidth + " - textRowView: " + $.textRowView.width);
+Ti.API.info("screen width: " + Alloy.Globals.screenWidth + " - screenHeight: " + Alloy.Globals.screenHeight +  " - textRowView: " + $.textRowView.width + " - activityRow: " + $.activityRow.width);
 // fill in the row
 $.photoImageView.image = args.photo;
 $.nameLabel.text = args.name;

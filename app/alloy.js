@@ -17,6 +17,6 @@ Alloy.Globals.shouldTest = false;
 Alloy.Globals.atlasUser = "ISLAS";
 Alloy.Globals.atlasPassword = "ISLAS";
 
-// Screen width and height
-Alloy.Globals.screenWidth = Ti.Platform.displayCaps.platformWidth;
-Alloy.Globals.screenHeight = Ti.Platform.displayCaps.platformHeight;
+// Screen width and height, in dip
+Alloy.Globals.screenWidth = OS_IOS ? Ti.Platform.displayCaps.platformWidth : Ti.Platform.displayCaps.platformWidth * 160 / Ti.Platform.displayCaps.dpi;
+Alloy.Globals.screenHeight = OS_IOS ? Ti.Platform.displayCaps.platformHeight : Ti.Platform.displayCaps.platformHeight * 160 / Ti.Platform.displayCaps.dpi;

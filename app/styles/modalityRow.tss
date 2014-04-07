@@ -1,29 +1,45 @@
 "Label": {
 	color: "#000"
 },
+// row
 "#modalityRow": {
+	layout: "horizontal",
 	height: Ti.UI.SIZE,
+	width: Ti.UI.FILL,
 	selectionStyle:"none"
 },
+// main views
+"#textView": {
+	layout: "vertical",
+	height: Ti.UI.FILL,
+	left: 0
+},
+"#bookButtonView": {
+	layout: "absolute",
+	height: Ti.UI.FILL,
+	left: 0
+},
+// elements in #textView
 "#modalityNameLabel": {
-	top: "2dp",
-	height: "14dp",
-	left: "10dp",
+	top: 2,
+	height: Ti.UI.SIZE,
+	left: 10,
 	font: {
-		fontSize: "14dp"
+		fontSize: 14
 	}
 },
 "#modalityPriceLabel": {
-	bottom: "2dp",
-	height: "18dp",
-	left: "10dp",
+	top: 10,
+	height: Ti.UI.SIZE,
+	left: 10,
 	font: {
-		fontSize: "18dp"
+		fontSize: 18
 	}
 },
+// elements in #bookButtonView
 "#bookButton": {
 	title: "Book",
-	width: "50dp",
-	height: "18dp",
-	right: "10dp"
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	right: 10,
 }
